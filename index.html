@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web nghe nhạc</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+<body>
+	<div class="big-div w3-light-blue">
+		<!-- Nav Bar -->
+	<div class="w3-bar w3-border w3-black">
+	  <a href="index.html" class="w3-bar-item w3-button"><i class="w3-xlarge fa fa-home"></i></a>
+	  <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Bài Hát</a>
+	  <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Ca sĩ</a>
+	  <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Top 10</a>
+	</div>
+
+	<!-- Slide show -->
+	<div class="w3-content" style="max-width:1200px">
+	  <img class="mySlides" src="images/1.jpg" style="width:100%">
+	  <img class="mySlides" src="images/2.jpg" style="width:100%">
+	  <img class="mySlides" src="images/3.jpg" style="width:100%">
+	  <img class="mySlides" src="images/4.jpg" style="width:100%">
+
+
+	  <div class="w3-row-padding w3-section">
+	    <div class="w3-col s3">
+	      <img class="demo w3-opacity w3-hover-opacity-off" src="images/1.jpg" style="width:100%" onclick="currentDiv(1)">
+	    </div>
+	    <div class="w3-col s3">
+	      <img class="demo w3-opacity w3-hover-opacity-off" src="images/2.jpg" style="width:100%" onclick="currentDiv(2)">
+	    </div>
+	    <div class="w3-col s3">
+	      <img class="demo w3-opacity w3-hover-opacity-off" src="images/3.jpg" style="width:100%" onclick="currentDiv(3)">
+	    </div>
+	    <div class="w3-col s3">
+	      <img class="demo w3-opacity w3-hover-opacity-off" src="images/4.jpg" style="width:100%" onclick="currentDiv(4)">
+	    </div>
+ 	 </div>
+
+ 	 <!-- Content grid -->
+ 	 <div id="headerDanhSachNhac" class="w3-container w3-black">
+	  <h2>Danh sách nhạc</h2>
+	 </div>
+ 	 <div class="w3-row-padding w3-padding-16 w3-center" id="listNhac">
+	    <a href="clggct.html"><div class="w3-quarter">
+	      <img src="images/logo.jpg" alt="Còn Gì Giữa Chúng Ta" style="width:80%">
+	      <h3>Còn Gì Giữa Chúng Ta</h3>
+	      <h3 class="singer">Miu Lê</h3>
+	    </div></a>
+	    <a href=""><div class="w3-quarter">
+	      <img src="images/logo.jpg" alt="1 2 3 4" style="width:80%">
+	      <h3>1 2 3 4</h3>
+	      <h3 class="singer">Chi Dân</h3>
+	    </div></a>
+	    <a href=""><div class="w3-quarter">
+	      <img src="images/logo.jpg" alt="Hãy Về Đây Bên Anh" style="width:80%">
+	      <h3>Hãy Về Đây Bên Anh</h3>
+	      <h3 class="singer">Duy Mạnh</h3>
+	    </div></a>
+	    <a href=""><div class="w3-quarter">
+	      <img src="images/logo.jpg" alt="GHEN" style="width:80%">
+	      <h3>GHEN</h3>
+	      <h3 class="singer">ERIK, Min, Khắc Hưng</h3>
+	   	 </div></a>
+	 	</div>
+	</div>
+
+	<!-- Quote Zone -->
+	<div id="headerDanhSachNhac" class="w3-container w3-black">
+		  <h2>Today Quote</h2>
+	</div>
+	<div class="w3-panel w3-leftbar w3-light-grey">	
+	  <p class="w3-xlarge w3-serif">
+	  <i>"Make it as simple as possible, but not simpler."</i></p>
+	  <p>Albert Einstein</p>
+	</div>
+
+	<!-- Footer -->
+	<div class="w3-container w3-black w3-right-align">
+	  <h5>Liên hệ với chúng tôi</h5>
+	  <p>Email: Boom@wnn.vn</p>
+	  <address>Địa chỉ: Tòa nhà HAGL Safomec, 7/1 Thành Thái, P14, Q10, TP.HCM</address>
+	</div>
+</div>
+</body>
+</html>
