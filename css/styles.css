@@ -2,6 +2,7 @@ body {
 	width: 80%;
 	margin: 0px auto;
 	font-family: 'Open Sans Condensed', sans-serif !important;
+	font-size: 16px;
 }
 
 .mySlides {
@@ -38,4 +39,8 @@ h2, h3{
 #listNhac div:hover{
 	border: 2px solid white;
 	
+}
+
+.w3-ul a {
+	text-decoration: none !important;
 }
