@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Web nghe nhạc</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="big-div w3-light-blue">
+		<!-- Nav Bar -->
+	<div class="w3-bar w3-border w3-black">
+	  <a href="index.html" class="w3-bar-item w3-button"><i class="w3-xlarge fa fa-home"></i></a>
+	  <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Bài Hát</a>
+	  <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Ca sĩ</a>
+	  <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Top 10</a>
+	</div>
+
+
+
+	<div class="w3-row">
+	  <div class="w3-col m8 l9 ">
+	    <!-- Bai hat -->
+
+		 <div class="w3-container l9">
+			 
+			 <h2>GHEN</h2>
+			  <h2 style="opacity: 0.5;"> ERIK, Min, Khắc Hưng </h2>
+			 <img src="images/gif.gif" />
+			 <audio controls autoplay="true" style="width: 499px; margin: 10px 0;">
+			  <source src="audio/Ghen-ERIKMINKhacHung.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+	  </div>
+	  <div class="w3-col m4 l3">
+	    <!-- Danh sách nhạc  -->
+	    <div class="w3-container w3-black">
+		  <h2>Danh sách nhạc</h2>
+		</div>
+ 	 	<ul class="w3-ul">
+		  <li><a href="clggct.html">
+	      <span>Còn Gì Giữa Chúng Ta </span>
+	      <span class="singer" style="float:right;">Miu Lê</span></a></li>
+		  <li>
+		  <a href="1234.html">
+	      <span>1 2 3 4 </span>
+	      <span class="singer" style="float:right;">Chi Dân</span></a>
+	      </li>
+		  <li>
+		  <a href="hvdba.html">
+	      <span>Hãy Về Đây Bên Anh </span>
+	      <span class="singer" style="float:right;">Duy Mạnh</span></a>
+	      </li>
+	      <li>
+	      <a href="g.html">
+	      <span>GHEN </span>
+	      <span class="singer" style="float:right;">ERIK, Min, Khắc Hưng</span></a>
+	      </li>
+		</ul>
+		</div>
+	</div>
+
+	<!-- Lời bài hát -->
+	<div id="headerQuote" class="w3-container w3-black">
+		  <h2>Lời bài hát</h2>
+	</div>
+	<div class="w3-panel w3-leftbar w3-light-grey">	
+	  <p class="w3-xlarge w3-serif">
+	  <p id="divLyric" class="pd_lyric trans" style="height:auto;max-height:none;">
+                        Bài hát: Ghen - ERIK, MIN, Khắc Hưng
+		<br>
+		<br>Verse 1: 
+		<br>2 giờ sáng, anh gọi em không nhấc máy 
+		<br>Không một tin nhắn từ tối qua 
+		<br>Không hề biết em ngủ chưa hay vẫn thức 
+		<br>Hay đang ở một nơi rất xa 
+		<br>
+		<br>Pre-chorus 1: 
+		<br>(Ooh ooh ooh) Có lẽ em đang vui bên người khác, trong một vòng tay ấm áp 
+		<br>(Ooh ooh ooh) Có lẽ anh đang say trong ảo giác, từng hờn ghen như bùng cháy lên 
+		<br>
+		<br>Chorus: 
+		<br>Bởi vì anh ghen ghen ghen ghen mà 
+		<br>Vì anh đang yêu em thôi thôi thôi mà 
+		<br>Là anh đang ghen ghen ghen ghen mà 
+		<br>Bởi vì anh đã quá yêu em, quá yêu em
+		<br>
+		<br>Verse 2: 
+		<br>3 giờ sáng, căn phòng khuya đang ấm áp 
+		<br>Bỗng dòng tin nhắn chơt lướt qua 
+		<br>“Em ở đâu? Đã ngủ chưa hay vẫn thức?” 
+		<br>“Hay bây giờ đây anh đến nhà?” 
+		<br>
+		<br>Pre-chorus 2: 
+		<br>(Ooh ooh ooh) Có lẽ anh lo âu không cần thiết, chắc điều đấy anh cũng biết 
+		<br>(Ooh ooh ooh) Có lẽ anh đang say trong ảo giác, từng hờn ghen như bùng cháy lên 
+		<br>
+		<br>Bridge: 
+		<br>Vì anh quá yêu em, chỉ muốn đến bên em và giữ em cho riêng mình anh 
+		<br>Làm sao để cho em hiểu được trái tim anh, cứ phát điên vì em mà thôi 
+		<br>Và em cũng yêu anh, chỉ muốn đến bên anh để xóa tan bao nhiêu buồn lò 
+		<br>‘Cause I just wanna make you my babe!
+		                        
+                    </p>
+	</div>
+
+	<!-- Footer -->
+	<div class="w3-container w3-black w3-right-align">
+	  <h5>Liên hệ với chúng tôi</h5>
+	  <p>Email: Boom@wnn.vn</p>
+	  <address>Địa chỉ: Tòa nhà HAGL Safomec, 7/1 Thành Thái, P14, Q10, TP.HCM</address>
+	</div>
+</div>
+</body>
+</html>
