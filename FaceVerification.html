@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đồ án môn học</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<link href="styles-v2.css" rel="stylesheet" />
+	
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="w3-black">
+	<script>
+		select = '';
+
+		function onClick(element) {
+			$("#img01").attr('src',$('#' + element).attr('src'));
+			document.getElementById("modal01").style.display = "block";
+			$('#inpImage').val($('#' + element).attr('src'));
+			select = element;
+		};
+
+		function onClose(){
+			document.getElementById('modal01').style.display='none';
+			$('#' + select).attr('src', $('#inpImage').val());
+		};
+
+		function onChange(){
+			$('#img01').attr('src', $('#inpImage').val());
+		};
+
+	</script>
+	<div id="modal01" class="w3-modal">
+		<div style="text-align: center; padding: 10px; color: black; overflow: hidden;" class="w3-modal-content w3-animate-zoom">
+			<img id="img01" style="width:30%">
+			<br /><br />
+			URL: <input onchange="onChange()" id="inpImage" type="text" width="100%">
+			<br />
+			<button class="w3-button w3-right w3-black w3-border" onclick="onClose()">Đóng</button>
+		</div>
+	</div>
+	<div class="header w3-containers w3-center">
+
+	<h1> <a href="FaceVerification.html"><img src="http://www.economics.illinois.edu/undergrad/students/women/images/homepage.png" height="50px"></a> Xác minh khuôn mặt </h1>
+	</div>
+	<div class="main w3-row">
+		<div class="w3-teal w3-center left w3-col m4 l3" style="height: 402px"> 
+			<h2 class="w3-panel"> Ảnh để xác minh: </h2>
+			<div class="w3-display-container w3-hover-opacity" >
+				<img  id="sourceImage" width="244px" height="244px" src="http://www.laughspin.com/wordpress/wp-content/uploads/barack-obama.jpg" />
+				<div class="w3-display-middle w3-display-hover w3-xlarge">
+					<button onclick="onClick('sourceImage')" class="w3-button w3-black">Sửa</button>
+				</div>
+			</div>
+			<br />
+			<br />
+			<br />
+		</div>
+		<div class="right w3-col m8 l9 w3-white">
+			<h2 class="w3-panel"> Thư Viện: </h2>
+			<div class="w3-row">
+				<div class="w3-col m2 w3-center" style="width:20%">
+					<div class="w3-display-container w3-hover-opacity">
+						<img id="lib1" width="140px" height="140px" src="https://pbs.twimg.com/profile_images/822547732376207360/5g0FC8XX_400x400.jpg" />
+						<div class="w3-display-middle w3-display-hover w3-small">
+							<button onclick="onClick('lib1')" class="w3-button w3-black">Sửa</button>
+						</div>
+					</div>
+				</div>
+				<div class="w3-col m2 w3-center" style="width:20%">
+					<div class="w3-display-container w3-hover-opacity">
+						<img id="lib2" width="140px" height="140px" src="http://science.nd.edu/assets/208492/patflynn_250.jpg" />
+						<div class="w3-display-middle w3-display-hover w3-small">
+							<button onclick="onClick('lib2')" class="w3-button w3-black">Sửa</button>
+						</div>
+					</div>
+				</div>
+				<div class="w3-col m2 w3-center" style="width:20%">
+					<div class="w3-display-container w3-hover-opacity">
+						<img id="lib3" width="140px" height="140px" src="http://human-translations.com/wp-content/uploads/2015/05/Faces-400x400px-1_1-256x256-250x250.jpg" />
+						<div class="w3-display-middle w3-display-hover w3-small">
+							<button onclick="onClick('lib3')" class="w3-button w3-black">Sửa</button>
+						</div>
+					</div>
+				</div>
+				<div class="w3-col m2 w3-center" style="width:20%">
+					<div class="w3-display-container w3-hover-opacity">
+						<img id="lib4" width="140px" height="140px" src="http://www.killerhiphop.com/wp-content/uploads/2011/08/eminem.jpg" />
+						<div class="w3-display-middle w3-display-hover w3-small">
+							<button onclick="onClick('lib4')" class="w3-button w3-black">Sửa</button>
+						</div>
+					</div>
+				</div>
+				<div class="w3-col m2 w3-center" style="width:20%">
+					<div class="w3-display-container w3-hover-opacity">
+						<img id="lib5" width="140px" height="140px" src="https://i.pinimg.com/736x/00/16/81/0016810b3e01d4d5cce9863a6eb4901c---election-barack-obama.jpg" />
+						<div class="w3-display-middle w3-display-hover w3-small">
+							<button onclick="onClick('lib5')" class="w3-button w3-black">Sửa</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="w3-row">
+				<div class="w3-col m2 w3-center" style="width:20%">
+					<div class="w3-display-container w3-hover-opacity">
+						<img id="lib6" width="140px" height="140px" src="https://3.img-dpreview.com/files/p/E~TS250x250~articles/7507411185/Screen_Shot_2014-03-19_at_11.31.27_AM.png" />
+						<div class="w3-display-middle w3-display-hover w3-small">
+							<button onclick="onClick('lib6')" class="w3-button w3-black">Sửa</button>
+						</div>
+					</div>
+				</div>
+				<div class="w3-col m2 w3-center" style="width:20%">
+					<div class="w3-display-container w3-hover-opacity">
+						<img id="lib7" width="140px" height="140px" src="http://tserkovnyi.com/img/me.jpg" />
+						<div class="w3-display-middle w3-display-hover w3-small">
+							<button onclick="onClick('lib7')" class="w3-button w3-black">Sửa</button>
+						</div>
+					</div>
+				</div>
+				<div class="w3-col m2 w3-center" style="width:20%">
+					<div class="w3-display-container w3-hover-opacity">
+						<img id="lib8" width="140px" height="140px" src="http://techon.nikkeibp.co.jp/english/NEWS_EN/20090602/171114/MP_1.jpg" />
+						<div class="w3-display-middle w3-display-hover w3-small">
+							<button onclick="onClick('lib8')" class="w3-button w3-black">Sửa</button>
+						</div>
+					</div>
+				</div>
+				<div class="w3-col m2 w3-center" style="width:20%">
+					<div class="w3-display-container w3-hover-opacity">
+						<img id="lib9" width="140px" height="140px" src="https://i.pinimg.com/736x/a4/43/0a/a4430a0630ecdad60e942b1a7cb29972--korean-ulzzang-ulzzang-girl.jpg" />
+						<div class="w3-display-middle w3-display-hover w3-small">
+							<button onclick="onClick('lib9')" class="w3-button w3-black">Sửa</button>
+						</div>
+					</div>
+				</div>
+				<div class="w3-col m2 w3-center" style="width:20%">
+					<div class="w3-display-container w3-hover-opacity">
+						<img id="lib10" width="140px" height="140px" src="https://winklevosscapital.com/wp-content/uploads/2014/10/2014-09-16-Anoynmous-The-Rise-of-Personal-Networks.jpg" />
+						<div class="w3-display-middle w3-display-hover w3-small">
+							<button onclick="onClick('lib10')" class="w3-button w3-black">Sửa</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+		</div>
+	</div>
+
+</div>
+<br />
+<div class="footer w3-container w3-white">
+	<br />
+	<button class="w3-btn w3-teal w3-large" onclick="run()">Chạy chương trình</button>
+
+	<div id="id01" class="w3-panel w3-display-container" style="display:none">
+		<h3> Những gương mặt trùng khớp: </h3>
+		<div style="display:block" class="loader"></div>
+	</div>
+	<br> <br> <br>
+</div>
+
+
+</body>
